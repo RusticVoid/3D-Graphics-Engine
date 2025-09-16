@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.disable": [
+        "missing-parameter",
+        "lowercase-global",
+        "redundant-value",
+        "undefined-global",
+        "trailing-space",
+        "need-check-nil"
+    ]
+}
