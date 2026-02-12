@@ -6,7 +6,7 @@ function player.new()
     self.x = 0
     self.y = 0
     self.z = 0
-    self.speed = 0.1
+    self.speed = 1
     self.rotX = 0
     self.rotY = 0
     self.rotSpeed = 0.1

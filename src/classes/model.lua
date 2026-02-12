@@ -208,17 +208,17 @@ function model:draw()
         }
     end
 
-    table.sort(self.Triangles, function(a, b)
-        return a.avg_z > b.avg_z
-    end)
+    --table.sort(self.Triangles, function(a, b)
+    --    return a.avg_z > b.avg_z
+    --end)
 
-    for i = 1, #self.Triangles, 1 do
-        if (self.Triangles[i].Clip1 > Player.nearClipPlane) 
-        and (self.Triangles[i].Clip2 > Player.nearClipPlane) 
-        and (self.Triangles[i].Clip3 > Player.nearClipPlane) then
-            love.graphics.setColor(self.Triangles[i].color)
-            love.graphics.polygon("fill", self.Triangles[i].X1, self.Triangles[i].Y1, self.Triangles[i].X2, self.Triangles[i].Y2, self.Triangles[i].X3, self.Triangles[i].Y3)
-            FaceAmount = FaceAmount + 1
-        end
-    end
+    --for i = 1, #self.Triangles, 1 do
+    --    if (self.Triangles[i].Clip1 > Player.nearClipPlane) 
+    --    and (self.Triangles[i].Clip2 > Player.nearClipPlane) 
+    --    and (self.Triangles[i].Clip3 > Player.nearClipPlane) then
+    --        love.graphics.setColor(self.Triangles[i].color)
+    --        love.graphics.polygon("fill", self.Triangles[i].X1, self.Triangles[i].Y1, self.Triangles[i].X2, self.Triangles[i].Y2, self.Triangles[i].X3, self.Triangles[i].Y3)
+    --        FaceAmount = FaceAmount + 1
+    --    end
+    --end
 end
