@@ -20,23 +20,10 @@ function love.load()
     objects = {
         [0] = model.new({
             color = {0.5, -0.2, -0.2},
-            x = -16, y = 0, z = 0,
-            file = "./src/models/monkey.obj",
-            size = 16
-        }),
-        [1] = model.new({
-            color = {0.5, -0.2, -0.2},
-            x = 16, y = 0, z = 0,
+            x = 0, y = 0, z = 0,
             file = "./src/models/skull.obj",
             size = 16
         }),
-        [2] = model.new({
-            color = {0.5, -0.2, -0.2},
-            x = 0, y = 0, z = 0,
-            file = "./src/models/detailedBall.obj",
-            size = 64,
-            invert = true
-        })
     }
     objectsEnabled = true
 

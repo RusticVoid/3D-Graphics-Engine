@@ -44,5 +44,5 @@ function getDistance(x,y,z, x1,y1,z1)
 end
 
 function btn(value)
-  return value and 1 or 0
+    return value and 1 or 0
 end
